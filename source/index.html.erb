@@ -1,10 +1,134 @@
 ---
-title: Welcome to Middleman
+title: Negentropy
 ---
 
-<div class="welcome text-center">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<body>
+
+  <!-- Banner -->
+<div id="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6">
+          <h1>
+            Styl.us
+          </h1>
+          </br>
+          <p>Turn your friend into your best pen</p>
+          <p>Make every line another line</p>
+        </br>
+          <a href="" class="btn btn-danger btn-lg">
+            GET A FRIEND NOW
+          </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Features -->
+<div class="blue-bg padded">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-3">
+          <div class="card">
+            <%= image_tag "paper.svg" %>
+            <h3>Natural handlin'</h3>
+            <p>Change your habits now, <strong>burn a book</strong></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-sm-3">
+          <div class="card">
+            <%= image_tag "computer.svg" %>
+            <h3>No Sync - No NSA</h3>
+            <p>Just use a pen, like everybody</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-sm-3">
+          <div class="card">
+            <%= image_tag "analytics.svg" %>
+            <h3>Like a teacher</h3>
+            <p>Watch your grammar, everybody is reading</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-sm-3">
+          <div class="card">
+            <%= image_tag "data.svg" %>
+            <h3>We keep datas</h3>
+            <p>Hustlin' like Facebook, ya know</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="center padded">
+  <h2>Never hear from us again</h2>
+  <p>Leave us our mail, we will share it a lot</p>
+  <form action="/" class='form-inline'>
+    <input type="email" class="form-control" placeholder="ping@pong.com">
+    <input type="submit" value='Apply' class='btn btn-primary'>
+  </form>
+</div>
+  <!-- Map -->
+  <hr>
+  <div id="padding-erase">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-9">
+        <div id="map" style="width: 100%; height: 400px;"></div>
+
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+            <script type="text/javascript">
+            var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+
+            var myOptions = {
+              zoom: 16,
+              center: myLatlng,
+              scrollwheel: false,
+              mapTypeId: google.maps.MapTypeId.ROADMAP,
+              styles: [] // TODO: replace [] by array from https://snazzymaps.com/
+            };
+
+            var map = new google.maps.Map(document.getElementById('map'), myOptions);
+            var marker = new google.maps.Marker({
+              position: myLatlng,
+              map: map,
+              title: "You are here!"
+            });
+            </script>
+
+      </div>
+
+      <div class="col-xs-3">
+        <h2>Want to sue us?</h2>
+        <p>Good news, you are not alone.</p>
+      </br>
+        <p id="closer">24, rue du Petit Musc</p>
+        <p id="closer">75004 Paris</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Footer -->
+<div id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4">
+        <ul class="list-inline">
+          <li>
+            <a href=""><i class="fa fa-coffee"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-coffee"></i></a>
+          </li>
+          <li>
+            <a href="http://www.google.com" target="_blank"><i class="fa fa-gavel" ></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-8 text-right">
+        <p>Yeah yeah, we drink coffee, *and bring your lawyer</p>
+      </div>
+    </div>
+  </div>
